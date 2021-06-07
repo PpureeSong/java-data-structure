@@ -1,10 +1,8 @@
-apple
-apple
+(Apple apple
 banana
 mango
 mango
 mango
-pineapple
-watermelon
+pineapple watermelon.
 melon
-melon
+melon).

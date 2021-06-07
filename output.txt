@@ -1,6 +1,8 @@
-apple 2
+(apple 1
+apple 1
 banana 1
 mango 3
 pineapple 1
-watermelon 1
-melon 2
+watermelon. 1
+melon 1
+melon). 1
