@@ -2,8 +2,8 @@ package Chapter2.section3;
 
 public class Term4 {
 
-    public int coef; // 계수 coefficient
-    public int expo; // 자수 exponent
+    private int coef; // 계수 coefficient
+    private int expo; // 자수 exponent
 
     // 생성자(constructor) : 클래스와 동일한 이름을 가지며 return 타입이 없는 메서드
     // 생성자는 객체를 생성할 때 장동으로 실행됨
@@ -11,6 +11,21 @@ public class Term4 {
     public Term4(int c, int e) {
         coef = c;
         expo = e;
+    }
+
+    //getter method
+    public int getExpo() {
+        return expo;
+    }
+
+    // getter, accessor
+    public int getCoef() {
+        return coef;
+    }
+
+    // setter, mutator
+    public void setCoef(int coef) {
+        this.coef = coef;
     }
 
     public int calcTerm( int x) {

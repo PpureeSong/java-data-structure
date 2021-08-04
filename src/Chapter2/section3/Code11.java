@@ -11,8 +11,8 @@ import java.util.Scanner;
 
 public class Code11 {
 
-     Polynomial3[] polys = new Polynomial3[100];
-     int n;
+     private Polynomial4[] polys = new Polynomial4[100];
+     private int n;
 
     public void processCommand() {
         Scanner kb = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Code11 {
             String command = kb.next();
             if(command.equals("create")) {
                 char name = kb.next().charAt(0);
-                polys[n] = new Polynomial3(name);
+                polys[n] = new Polynomial4(name);
                 n++;
 
             } else if(command.equals("add")) {
@@ -64,7 +64,7 @@ public class Code11 {
 
     private int find(char name) {
         for(int i=0; i<n; i++) {
-            if(polys[i].name == name) {
+            if(polys[i].getName() == name) {
                 return i;
             }
         }
