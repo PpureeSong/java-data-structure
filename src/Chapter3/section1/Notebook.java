@@ -29,7 +29,10 @@ public class Notebook extends Computer {
     }
 
     public static void main(String[] args) {
-        Notebook test = new Notebook("Dell", "i5", 4, 100, 3.2, 15, 1.2);
+
+        //다형성 polymorphism : 수퍼클래스 타입의 참조변수가 서브클래스 타입의 객체를 참조할 수 있다.
+        Computer test = new Notebook("Dell", "i5", 4, 100, 3.2, 15, 1.2);
+
 //        test.manufacturer = "Dell";
 //        test.processor = "i5";
 //        test.ramSize = 4;
@@ -41,5 +44,11 @@ public class Notebook extends Computer {
 
         double computerPower = test.computerPower();
         System.out.println("computerPower = " + computerPower);
+
+        // toString이 Computer의 메소드인지 Notebook의 메소드인지 ?
+        // static binding VS dynamic binding(o)
+        // noteBook.toString 메소드를 호출한다.
+        // 타입은 Computer지만 실제로 참조하고 있는 객체는 notebook이기 때문에 notebook의 메소드를 호출한다. = dynamic binding
+        System.out.println("toString = " + test.toString());
     }
 }
